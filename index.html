@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#exp">Experience</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <!--<li><a href="#reach">Message</a></li>-->
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>I'm <span>LUCAS</span></h1>
+            <p>an EE major @ UCSB</p>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="exp">
+    <div class="container">
+        <h1 class="sub-title">Work Experience</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>ECE Researcher</h2>
+                <p>April 2023 - Present</p>
+                <br><br>
+                <p>
+                    I'm currently conducting research with UCSB's Dr. Peng Li on using temporal SNN's for neuromorphic computing.
+                    Through lab meetings and guest lectures, I've gained intuition on neural backpropagation, unsupervised learning, and systolic array architecture.
+                    Previously, I simulated SVM & Softmax classifiers and implemented a fully connected CNN.
+                    My current project involves developing a post-synaptic current alteration in the TSSL-BP model. 
+                    I'm essentially converting a discrete time system to continuous time and training the model with various datasets (NMIST, CIFAR-10, etc).
+                </p>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Website Developer</h2>
+                <p>October 2022 - Present</p>
+                <br><br>
+                <p>
+                    I'm currently managing the <a href = " https://robinson.faculty.soc.ucsb.edu/index.shtml" title="_blank" style = "color: #568fe5"> website</a> for UCSB's Prof. William Robinson. 
+                    I develop the user interfaces using HTML & CSS.
+                    Over time, I've developed various concurrency and styling techniques for quick and seamless updating.
+                </p>            
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Formula SAE</h2>
+                <p>March 2022 - June 2023</p>
+                <br><br>
+                <p>
+                    I was part of the elctrical team at UCSB's Formula SAE team, Gaucho Racing.
+                    I helped design the shutdown and safety systems of the car, tested circuits with SPICE simulations, and dabbled in designing PCBs (in Autodesk Eagle).
+                    I also helped source electronic parts (sensors, ICs, switches) based on pricing, functionality, and satisfying safety rules.
+                </p>                 
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>P2S Inc.</h2>
+                <p>June 2022 - September 2022</p>
+                <br><br>
+                <p>
+                    As an electrical engineering intern in the MEP industry, I helped on the following projects:
+                </p>
+                <p>
+                    (1) LACCD Power Efficiency Study: constructed single-line diagrams of high voltage field equipment and manhole profiles of feeder cables in CAD after on-site field surveys
+                </p>
+                <p>
+                    (2) CSU Fullerton Arc Flash Study: used ETAP to generate TCC curves for protective device coordination and categorizing potential arc flash hazards by modeling electrical systems of campus buildings
+                </p>
+                <p>
+                    (3) Mt. SAC Elevator Building Electrical Design: used Revit to circuit power and lighting systems, construct riser diagrams for the fire alarm systems, generate battery calculation schedules, and compute voltage drop and short circuit calculations
+                </p>                 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-menu">
+            <!-- Submenu for navigation -->
+            <a href="#project1">(1) NMOS Fabrication</a>
+            <a href="#project2">(2) Monophonic Musical Synthesizer</a>
+            <a href="#project3">(3) Automated Garage Door System</a>
+            <a href="#project4">(4) Analog Circuit Design</a>
+            <a href="#project5">(5) Digital Tail Lights</a>
+            <a href="#project6">(6) Adaptive Alarm Clock</a>
+        </div>
+
+        <!-- Project 1 -->
+        <div id="project1">
+            <div class="project">
+                <div class="project-header">
+                    <h2>NMOS Design & Fabrication</h2>
+                </div>
+                <div class="project-description">
+                    <p>
+                        Fabricated 8 NMOS wafers using photolithography processing, HF etching, and electron beam evaporation.
+                        Masks were patterned with a contact aligner, calibrated etch times with microscopic analysis, and measured junction heights with a Dektak profilometer.
+                        After finishing the samples with a metal liftoff, a 4-point probe was used to measure I-V characteristics, transconductance, and TLM for resistivity.
+                    </p>
+                </div>
+                <div class="project-images">
+                    <img src="images/cleanroom.png" style="max-width:25%; height:auto;">
+                    <img src="images/wafer.png" style="max-width:25%; height:auto;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div id="project2">
+            <div class="project">
+                <div class="project-header">
+                    <h2>Monophonic Musical Synthesizer</h2>
+                </div>
+                <div class="project-description">
+                    <p>
+                        alsdkfja;dsfjkl
+                    </p>
+                </div>
+                <div class="project-images">
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div id="project3">
+            <div class="project">
+                <div class="project-header">
+                    <h2>Automated Garage Door System</h2>
+                </div>
+                <div class="project-description">
+                    <p>
+                        Built a garage door system that is controlled by a half-stepping stepper motor. 
+                        An accelerometer (interfaced with SPI) is used to determine the position of the door and it is opoened or closed with either terminal commands in UART or specified temperature conditions read from a TC-74 sensor using I2C.
+                        Bluetooth compatibility was also implemented with the HC-05 module.
+                    </p>
+                </div>
+                <div class="project-images">
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div id="project4">
+            <div class="project">
+                <div class="project-header">
+                    <h2>Analog Circuit Design</h2>
+                </div>
+                <div class="project-description">
+                    <p>
+                        Built a RMS converter for sinusoidal inputs with bandwidths between 50-100k Hz and amplitudes up to 4 Volts using only BJT ICs, op-amp ICs, and passive resistors/capacitors (no analog multipliers).
+                    </p>
+                    <p>
+                        Built a single-stage differential amplifier for sinusoidal inputs up to 100k Hz and 20 mV amplitudes.
+                        The amplifier, which displayed functionality of 100 voltage gain, 6 Vpp output swing, and CMRR of 66 dB, was built with only MOSFET ICs, resistors, and capacitors.
+                    </p>
+                </div>
+                <div class="project-images">
+                    <img src="images/RMScircuit.png" style="max-width:50%; height:auto;">
+                    <img src="images/RMSboard.png" style="max-width:25%; height:auto;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div id="project5">
+            <div class="project">
+                <div class="project-header">
+                    <h2>Digital Tail Lights</h2>
+                </div>
+                <div class="project-description">
+                    <p>
+                        Designed digital sequential tail lights using six LED's (3 per side) that mimic that of a Ford Mustang.
+                        Switches are mapped to states that allow lights to flash incrementally (left or right) to indicate turning or together to represent a hazard.
+                        LED's also brighten to represent an emergency and dim to represent braking, and logic was implemented to allow for combining these states.
+                        The hardware design was programmed in SystemVerilog, the testbench was simulated in Modelsim, and the code was mapped to an Intel FGPA using Quartus.
+                    </p>
+                </div>
+                <div class="project-images">
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div id="project6">
+            <div class="project">
+                <div class="project-header">
+                    <h2>Adaptive Alarm Clock</h2>
+                </div>
+                <div class="project-description">
+                    <p>
+                        Built an alarm clock that takes an audio input (via 3.5mm jack) and analyzes it to generate custom flashing LED's and buzzer noises.
+                        An enclosure was 3D printed using AutoFusion 360 which displayed a 7-segment timing display on the top face.
+                        The time is set by a potentiometer and the MSGEQ7 chip was used to evaluate the audio signal's input frequencies.
+                    </p>
+                </div>
+                <div class="project-images">
+                    <img src="images/clock.png" style="max-width:30%; height:auto;">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/LucasFace.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Lucas Liang</h1>
+                <br><br>
+                <p>
+                    Hi there &#9995; I'm Lukey, a 4th-year EE major at UCSB.
+                    I was raised in San Jose, CA from immigrant parents from Taiwan.
+                    I enjoy working in team-oriented settings and thrive in face-paced environments.
+                    Whether it's through work or  projects, I aim to challenge myself and develop multidisciplinary skills.
+                    With my engineering degree, I hope to find socially responsible solutions for a more sustainable future!
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('edu')"><span>Education</span></p>
+                    <p class="tab-links" onclick="opentab('skills')"><span>Skills</span></p>
+                    <p class="tab-links" onclick="opentab('hobbies')"><span>Hobbies</span></p>
+                    <p class="tab-links" onclick="opentab('contact')"><span>Contact</span></p>
+                </div>
+                <div class="tab-contents active-tab" id="edu">
+                    <ul>
+                        <p>University of California, Santa Barbara</p>
+                        <p>Electrical Engineering (BS): June 2025</p>
+                        <br><br>
+                        <p>Relevant Coursework:</p>
+                        <p>- Analog Circuits & Electronics</p>
+                        <p>- Sensor & Peripheral Interface Design</p>
+                        <p>- Integrated Circuit Design & Fabrication</p>
+                        <p>- Computer Architecture</p>
+                        <p>- Continuous & Discrete Signal Processing</p> 
+                        <p>- Solid-State Electronic Devices</p>
+                    </ul>
+                    <a href="images/Lucas Liang Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li>Coding: C++ | SystemVerilog | Python | PyTorch | Java | RISC-V | LaTeX</li>
+                        <li>Engineering: Modelsim | LTspice | MATLAB | Quartus | Excel | AutoCAD</li>
+                        <li>Leadership: Committee Head (Theta Tau), HS Football Team Captain</li>
+                    </ul>
+                    <a href="images/Lucas Liang Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                        <li>When I'm not studying, you can find me surfing, lifting weights, watching football, playing sports, munching food, or hanging out with family & friends.</li>
+                        <img src="images/hobbies.jpg" style="max-width:75%; height:auto;">
+                    </ul>                </div>
+                <div class="tab-contents" id="contact">
+                    <ul>
+                        <li>Personal Email: lucasliang04@gmail.com</li>
+                        <li>School Email: lucasliang@ucsb.edu</li>
+                        <li>Phone Number: 408-888-6915</li>
+                        <li>LinkedIn: <a href = "https://www.linkedin.com/in/lucas-liang/" title="_blank" style = "color: #5684c8">www.linkedin.com/in/lucas-liang</a></li>
+
+                    </ul>
+                    <a href="images/Lucas Liang Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="reach">
+    <div class="container">
+        <div class="row">
+            <h1>Reach me here:</h1>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                <button type="submit" class="btn btn2">Send</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p style="font-size: 13px">Copyright © lucasliang</p>
+        <p style="font-size: 8px">Created with HTML & CSS; Updated: 5/21/24</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxJOMIpn-MSnBh5ZIuWU-qAGLvFyVa7PvjvV2XxlHIYxKlHTpcUq_NDrYkQGd2wSbcH/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Thanks for your message! I'll respond ASAP"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

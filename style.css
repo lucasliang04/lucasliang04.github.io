@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Courier New';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #282828;
+    color: #FFF;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/blurred.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container{
+    padding: 10px 10%;
+}
+
+.logo{
+    width: 90px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*top-right submenu*/
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #2b4060;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #2b4060;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*main home page text*/
+.header-text{
+    margin-top: 20%;
+    font-size: 25px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #2b4060;
+}
+/* -----------about--------------- */
+#about{
+    padding: 80px 0;
+    color: #fff;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 85%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-titles span{
+    color: #568fe5;
+    font-size: 16px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #3c64a0;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* Button styling */
+.btn.btn2 {
+    display: inline-block; /* Aligns the link like a block but keeps it inline */
+    padding: 10px 20px; /* Adds space inside the button */
+    background-color: #568fe5; /* Button background color */
+    color: rgb(204, 204, 204); /* Text color */
+    text-decoration: none; /* Removes the underline */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+    border: 1px solid transparent; /* Adds a border that blends into the button, can adjust color */
+    margin-top: 35px /* Space above button */
+}
+.btn.btn2{
+    display: inline-block;
+    background: #2b4060;
+}
+/* Button hover styling */
+.btn.btn2:hover {
+    background-color: #2b4060; /* Changes background color on hover */
+    transform: scale(1.05); /* Slightly increases size */
+    border-color: #fff; /* Optional: changes border color on hover */
+}
+
+/* ----------------services------------- */
+
+#exp{
+    padding: 30px 0;
+}
+.services-list {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 50px 0; /* Adjust top margin */
+}
+.services-list::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ddd; /* Timeline line color */
+    transform: translateX(-50%);
+}
+.services-list div {
+    background: #37383b;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 50%; /* Adjust the width as necessary */
+    margin-bottom: 20px; /* Space between items */
+    box-shadow: 0 3px 6px rgba(32, 31, 32, 0.1); /* Optional: adds shadow for depth */
+    transform: translateX(-50%);
+}
+
+/* Alternate the sides for the timeline entries */
+.services-list div:nth-child(odd) {
+    left: 50%;
+    transform: translateX(5%);
+}
+.services-list div:nth-child(even) {
+    left: 50%;
+    transform: translateX(-105%);
+}
+/*for the points before timeline (TAKEN OUT)*/
+/*
+.services-list div::before {
+    content: '';
+    position: absolute;
+    top: 20px; 
+    right: -5%; 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #ddd; 
+}
+*/
+/*hover*/
+.services-list div:hover {
+    background-color: #2b4060; /* Change to your desired hover background color */
+    transition: background-color 0.2s ease-in-out;
+}
+.services-list div:nth-child(even):hover {
+    transform: translateY(-10px) translateX(-105%);
+}
+.services-list div:nth-child(odd):hover {
+    transform: translateY(-10px) translateX(5%);
+}
+
+/* Adjust for even items */
+.services-list div:nth-child(even)::before {
+    left: -5%; /* For even items */
+    right: auto;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #fff; /* Adjust title color as needed */
+}
+.services-list div p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #ddd; /* Adjust paragraph color as needed */
+}
+
+/* -------portfolio----------- */
+#portfolio {
+    padding: 50px 0;
+}
+
+.project {
+    margin-bottom: 50px; /* Space between projects */
+    background-color: #37383b; /* Slight background color for distinction */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    padding: 20px; /* Padding around project content */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+.project:hover {
+    background-color: #2b4060; /* Change to your desired hover background color */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for the background color */
+}
+
+.project-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Adjusted from "nav ul li" to match your HTML structure */
+.project-menu a {
+    display: inline-block;
+    margin: 35px 25px;
+    color: #568fe5;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    list-style: none; /* Not needed as these are direct <a> elements, but kept for consistency */
+}
+
+/* Using the same styles for the pseudo-element as in the original nav CSS */
+.project-menu a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #2b4060;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s; /* Ensures the transition effect applies to the width property */
+}
+
+.project-menu a:hover::after {
+    width: 100%;
+}
+
+.project-header h2 {
+    margin-bottom: 15px; /* Space between title and description */
+}
+
+.project-description p {
+    margin-bottom: 20px; /* Space before images */
+}
+
+.project-images {
+    display: flex; /* Aligns images horizontally */
+    justify-content: center; /* Centers images in the container */
+    flex-wrap: wrap; /* Allows images to wrap to the next line if not enough space */
+    gap: 15px; /* Space between images */
+}
+
+.project-images img {
+    height: auto; /* Maintain aspect ratio */
+    max-width: calc(25% - 5px); /* Adjust width for 2 images side by side, accounting for gap */
+    display: block; /* Ensures images are properly displayed */
+}
+
+/* ---------contact-------- */
+#reach {
+    background: 282828;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #37383b;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #fff;
+}
+.copyright a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* -----------------css for small screens--------- */
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/IVsunset.jpg);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #2b4060;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+#msg{
+    color: #568fe5;
+    margin-top: 20px;
+    display: block;
+}
