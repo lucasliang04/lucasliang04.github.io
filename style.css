@@ -368,7 +368,14 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/IVsunset.jpg);
+        /* ① pick up the picture */
+        background: url("images/IVsunset.jpg") center/cover no-repeat;
+    
+        /* ② make sure the image scrolls instead of “fixed” */
+        background-attachment: scroll;
+    
+        /* ③ guarantee the element has some height */
+        min-height: 100vh;          /* full viewport height hero */
     }
     .header-text{
         margin-top: 100%;
